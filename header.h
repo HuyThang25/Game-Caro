@@ -134,7 +134,7 @@ char chuyenDoiXO(int n)
 int checkWinner(char a[][MAX], int i, int j)
 {
     int d = 0, k = i, h;
-    // ki?m tra hàng
+    // ki?m tra hÃ ng
     while (a[k][j] == a[i][j]) {
         d++;
         k++;
@@ -179,7 +179,7 @@ int checkWinner(char a[][MAX], int i, int j)
         set_color(7);
         return 1;
     }
-    // ki?m tra ???ng chéo 1
+    // ki?m tra ???ng chÃ©o 1
     h = i; k = j; d = 0;
     while (a[i][j] == a[h][k]) {
         d++;
@@ -204,7 +204,7 @@ int checkWinner(char a[][MAX], int i, int j)
         set_color(7);
         return 1;
     }
-    // ki?m tra ???ng chéo 2
+    // ki?m tra ???ng chÃ©o 2
     h = i; k = j; d = 0;
     while (a[i][j] == a[h][k]) {
         d++;
@@ -229,7 +229,7 @@ int checkWinner(char a[][MAX], int i, int j)
         set_color(7);
         return 1;
     }
-    // n?u không ???ng chéo nào th?a mãn thì tr? v? 0.
+    // n?u khÃ´ng ???ng chÃ©o nÃ o th?a mÃ£n thÃ¬ tr? v? 0.
     return 0;
 }
 void resetBang(char a[][MAX])
@@ -278,15 +278,15 @@ void hienThiLuu(char a[][MAX])
     system("cls");
     SetScreenBufferSize(200,200);
     gotoxy(100,10);
-    printf("B?n có mu?n l?u trân ??u l?i không?");
+    printf("B?n cÃ³ mu?n l?u trÃ¢n ??u l?i khÃ´ng?");
     gotoxy(100,12);
-    printf("Có");
+    printf("CÃ³");
     gotoxy(120,12);
-    printf("Không");
+    printf("KhÃ´ng");
     int x=100;
     gotoxy(x,12);
     set_color(2);
-    printf("Có");
+    printf("CÃ³");
     set_color(7);
     while (true )
     {
@@ -309,10 +309,10 @@ void hienThiLuu(char a[][MAX])
                     if (x==100)
                     {
                         gotoxy(120,12);
-                        printf("Không");
+                        printf("KhÃ´ng");
                         gotoxy(100,12);
                         set_color(2);
-                        printf("Có");
+                        printf("CÃ³");
                         set_color(7);
                     }
                     else x+=20;
@@ -327,10 +327,10 @@ void hienThiLuu(char a[][MAX])
                     if (x==120)
                     {
                         gotoxy(100,12);
-                        printf("Có");
+                        printf("CÃ³");
                         gotoxy(120,12);
                         set_color(2);
-                        printf("Không");
+                        printf("KhÃ´ng");
                         set_color(7);
                     }
                     else x-=20;
@@ -349,7 +349,7 @@ void hienThiLuu(char a[][MAX])
                             system("cls");
                             SetScreenBufferSize(200,200);
                             gotoxy(100,10);
-                            printf("Nh?p tên tr?n ??u: ");
+                            printf("Nh?p tÃªn tr?n ??u: ");
                             gotoxy(120,10);
                             printf("                              ");
                             gotoxy(120,10);
@@ -361,7 +361,7 @@ void hienThiLuu(char a[][MAX])
                             if (strlen(tenFileLuu)<=0)
                             {
                                 gotoxy(100,13);
-                                printf("Vui lòng nh?p tên tr?n ??u");
+                                printf("Vui lÃ²ng nh?p tÃªn tr?n ??u");
                                 sleep(1);
                                 gotoxy(100,48);
                                 printf("                           ");
@@ -369,7 +369,7 @@ void hienThiLuu(char a[][MAX])
                             else if(tonTaiTenFile(tenFileLuu))
                             {
                                 gotoxy(100,13);
-                                printf("Tr?n ??y ?ã t?n t?i. Vui lòng nh?p tên khác");
+                                printf("Tr?n ??y ?Ã£ t?n t?i. Vui lÃ²ng nh?p tÃªn khÃ¡c");
                                 sleep(1);
                                 gotoxy(100,48);
                                 printf("                                             ");
@@ -620,12 +620,12 @@ void diChuyenVaDanh2Nguoi(char a[][MAX])
                                 gotoxy(155,20);
                                 if(a[tung][hoanh]==p1)
                                 {
-                                    printf("Ng??i ch?i %s ?ã th?ng.",player1);
+                                    printf("Ng??i ch?i %s ?Ã£ th?ng.",player1);
                                     win1++;
                                 }
                                 else
                                 {
-                                    printf("Ng??i ch?i %s ?ã th?ng.",player2);
+                                    printf("Ng??i ch?i %s ?Ã£ th?ng.",player2);
                                     win2++;
                                 }
                                 return ;
@@ -633,7 +633,7 @@ void diChuyenVaDanh2Nguoi(char a[][MAX])
                             if(d==(MAX*MAX))
                             {
                                 gotoxy(155,20);
-                                printf("Tr?n ??u hoà");
+                                printf("Tr?n ??u hoÃ ");
                                 return ;
                             }
                         }
@@ -669,12 +669,12 @@ void diChuyenVaDanh2Nguoi(char a[][MAX])
                                 gotoxy(155,20);
                                 if(a[tung][hoanh]==p1)
                                 {
-                                    printf("Ng??i ch?i %s ?ã th?ng.",player1);
+                                    printf("Ng??i ch?i %s ?Ã£ th?ng.",player1);
                                     win1++;
                                 }
                                 else
                                 {
-                                    printf("Ng??i ch?i %s ?ã th?ng.",player2);
+                                    printf("Ng??i ch?i %s ?Ã£ th?ng.",player2);
                                     win2++;
                                 }
                                 return ;
@@ -682,7 +682,7 @@ void diChuyenVaDanh2Nguoi(char a[][MAX])
                             if(d==(MAX*MAX))
                             {
                                 gotoxy(155,20);
-                                printf("Tr?n ??u hoà");
+                                printf("Tr?n ??u hoÃ ");
                                 return ;
                             }
                         }
@@ -826,13 +826,13 @@ void diChuyenVaDanh1Nguoi(char a[][MAX])
                             if(a[tung][hoanh]=='X') { win1++; strcpy(winner,player1);}
                             else { win2++; strcpy(winner,player2);}
                             gotoxy(155,20);
-                            printf("Ng??i ch?i %s ?ã th?ng.",winner);
+                            printf("Ng??i ch?i %s ?Ã£ th?ng.",winner);
                             return ;
                       }
                       if(d==(MAX*MAX))
                       {
                             gotoxy(155,20);
-                            printf("Tr?n ??u hoà");
+                            printf("Tr?n ??u hoÃ ");
                             endGame=1;
                             return ;
                       }
@@ -857,18 +857,18 @@ void suaLai(int x, int y)
 {
     gotoxy(x,y);
     if (y==17) printf("Ch?i ti?p");
-    if (y==18) printf("Ván m?i");
+    if (y==18) printf("VÃ¡n m?i");
     if (y==19) printf("H??ng d?n");
-    if (y==20) printf("Thoát Game");
+    if (y==20) printf("ThoÃ¡t Game");
 }
 void ghiLai(int x, int y)
 {
     set_color(2);
     gotoxy(x,y);
     if (y==17) printf("Ch?i ti?p");
-    if (y==18) printf("Ván m?i");
+    if (y==18) printf("VÃ¡n m?i");
     if (y==19) printf("H??ng d?n");
-    if (y==20) printf("Thoát Game");
+    if (y==20) printf("ThoÃ¡t Game");
     set_color(7);
 }
 void diChuyenMenu(char a[][MAX])
@@ -928,7 +928,7 @@ void diChuyenMenu(char a[][MAX])
               if (ok)
               {
                   if (y==18)
-                  {     //Ván m?i
+                  {     //VÃ¡n m?i
                         endGame=0;
                         system("cls");
                         SetScreenBufferSize(200,200);
@@ -1073,22 +1073,22 @@ void hienThiThongTinNguoiChoi(char hoTen(), char player, int step, int win, int 
     gotoxy(x+1,y+3);
     printf("\tNg??i ch?i %c: %s",player,hoTen);
     gotoxy(x+1,y+4);
-    printf("\tS? quân %c: %d",player,step);
+    printf("\tS? quÃ¢n %c: %d",player,step);
     gotoxy(x+1,y+5);
-    printf("\tS? tr?n ?ã th?ng: %d", win);
+    printf("\tS? tr?n ?Ã£ th?ng: %d", win);
 }
 void hienThiNhapTen()
 {
     system("cls");
     SetScreenBufferSize(200,200);
     gotoxy(120-15,5);
-    printf("    <<  Ván m?i  >>   ");
+    printf("    <<  VÃ¡n m?i  >>   ");
     gotoxy(120-15,10);
-    printf("Nh?p tên ng??i ch?i ");
+    printf("Nh?p tÃªn ng??i ch?i ");
     gotoxy(115-15,12);
-    printf("Tên ng??i ch?i X: ");
+    printf("TÃªn ng??i ch?i X: ");
     gotoxy(115-15,13);
-    printf("Tên ng??i ch?i O: ");
+    printf("TÃªn ng??i ch?i O: ");
     gotoxy(110-15,14);
     printf("Quay l?i");
     gotoxy(140-15,14);
@@ -1111,11 +1111,11 @@ void ghiNhapTen(int x,int y, int mau)
     }
     if (y==12)
     {
-        printf("Tên ng??i ch?i X:");
+        printf("TÃªn ng??i ch?i X:");
     }
     if (y==13)
     {
-        printf("Tên ng??i ch?i O:");
+        printf("TÃªn ng??i ch?i O:");
     }
     set_color(7);
 }
@@ -1248,7 +1248,7 @@ int nhapTen()
                             if (strlen(player1)<=0 || strlen(player2)<=0)
                             {
                                 gotoxy(109-15,16);
-                                printf("Vui lòng nh?p ?? tên c?a hai ng??i ch?i");
+                                printf("Vui lÃ²ng nh?p ?? tÃªn c?a hai ng??i ch?i");
                                 sleep(2);
                                 gotoxy(109-15,16);
                                 printf("                                         ");
@@ -1292,24 +1292,24 @@ void hienThiPhuongThucDanh()
     system("cls");
     SetScreenBufferSize(200,200);
     gotoxy(120-15,5);
-    printf("    <<  Ván m?i  >>   ");
+    printf("    <<  VÃ¡n m?i  >>   ");
     gotoxy(120-15,10);
     printf("Ch?n ph??ng th?c di chuy?n: ");
     gotoxy(115-15,12);
-    printf("Di chuy?n b?ng 1 bên trên bàn phím");
+    printf("Di chuy?n b?ng 1 bÃªn trÃªn bÃ n phÃ­m");
     gotoxy(115-15,13);
-    printf("Di chuy?n b?ng 2 bên trên bàn phím");
+    printf("Di chuy?n b?ng 2 bÃªn trÃªn bÃ n phÃ­m");
 }
 void ghiPhuongThuc(int y, int mau)
 {
     set_color(mau);
     if (y==12)
     {
-        printf("Di chuy?n b?ng 1 bên trên bàn phím");
+        printf("Di chuy?n b?ng 1 bÃªn trÃªn bÃ n phÃ­m");
     }
     if (y==13)
     {
-        printf("Di chuy?n b?ng 2 bên trên bàn phím");
+        printf("Di chuy?n b?ng 2 bÃªn trÃªn bÃ n phÃ­m");
     }
     set_color(7);
 }
@@ -1447,18 +1447,18 @@ int choiLai()
 void ghiDoiLuot(int x, int mau)
 {
     set_color(mau);
-    if (x==150) printf("Có");
-    else printf("Không");
+    if (x==150) printf("CÃ³");
+    else printf("KhÃ´ng");
     set_color(7);
 }
 int doiLuot()
 {
     gotoxy(155,20);
-    printf("B?n có mu?n ??i l??t không?");
+    printf("B?n cÃ³ mu?n ??i l??t khÃ´ng?");
     gotoxy(150,22);
-    printf("Có           ");
+    printf("CÃ³           ");
     gotoxy(180,22);
-    printf("Không        ");
+    printf("KhÃ´ng        ");
     int x=150,y=22;
     gotoxy(x,y);
     ghiDoiLuot(x,2);
@@ -1524,40 +1524,40 @@ void hienThiHuongDan()
     gotoxy(110,10);
     printf("Lu?t ch?i:");
     gotoxy(80,12);
-    printf("- Bàn c? g?m có 25x25 ô vuông.");
+    printf("- BÃ n c? g?m cÃ³ 25x25 Ã´ vuÃ´ng.");
     gotoxy(80,13);
-    printf("- S? d?ng cách th?c di chuy?n và ?ánh nh? h??ng d?n bên d??i.");
+    printf("- S? d?ng cÃ¡ch th?c di chuy?n vÃ  ?Ã¡nh nh? h??ng d?n bÃªn d??i.");
     gotoxy(80,14);
-    printf("- Ng??i ch?i nào ?ánh ?ánh d?u ???c ít nh?t 5 quân c? c?a mình liên ti?p theo hàng th?ng (ngang, d?c , chéo) tr??c thì dành chi?n th?ng.");
+    printf("- Ng??i ch?i nÃ o ?Ã¡nh ?Ã¡nh d?u ???c Ã­t nh?t 5 quÃ¢n c? c?a mÃ¬nh liÃªn ti?p theo hÃ ng th?ng (ngang, d?c , chÃ©o) tr??c thÃ¬ dÃ nh chi?n th?ng.");
     gotoxy(80,15);
-    printf("- Ng??i ch?i có quân c? X ???c ?i tr??c và hai ng??i s? ?ánh xen k? nhau.");
+    printf("- Ng??i ch?i cÃ³ quÃ¢n c? X ???c ?i tr??c vÃ  hai ng??i s? ?Ã¡nh xen k? nhau.");
     gotoxy(107,17);
-    printf("Cách di chuy?n:");
+    printf("CÃ¡ch di chuy?n:");
     gotoxy(80,19);
     printf("Ch? ?? 2 ng??i:");
     gotoxy(85,20);
     printf("Ng??i ch?i 1:");
     gotoxy(90,21);
-    printf("W : Lên");
+    printf("W : LÃªn");
     gotoxy(90,22);
     printf("S : Xu?ng");
     gotoxy(90,23);
-    printf("A : Sang trái");
+    printf("A : Sang trÃ¡i");
     gotoxy(90,24);
     printf("D : Sang ph?i");
     gotoxy(90,25);
-    printf("Space : ?ánh d?u quân c?");
+    printf("Space : ?Ã¡nh d?u quÃ¢n c?");
     gotoxy(135,20);
     printf("Ng??i ch?i 2:");
     gotoxy(140,21);
-    printf("S? d?ng các nút ?i?u h??ng ?? di chuy?n.");
+    printf("S? d?ng cÃ¡c nÃºt ?i?u h??ng ?? di chuy?n.");
     gotoxy(140,22);
-    printf("Enter : ?ánh d?u quân c?");
+    printf("Enter : ?Ã¡nh d?u quÃ¢n c?");
     gotoxy(80,27);
-    printf("Ch? ?? 1 ng??i: di chuy?n và ?ánh nh? ng??i ch?i 2 bên trên");
+    printf("Ch? ?? 1 ng??i: di chuy?n vÃ  ?Ã¡nh nh? ng??i ch?i 2 bÃªn trÃªn");
     gotoxy(110,29);
     set_color(1);
-    printf("B?m nút ESC ?? v? menu");
+    printf("B?m nÃºt ESC ?? v? menu");
     set_color(7);
     while (true)
     {
@@ -1657,16 +1657,16 @@ void hienThiMenu()
     printf("Ch?i ti?p");
     Sleep(100);
     gotoxy(112,18);
-    printf("Ván m?i");
+    printf("VÃ¡n m?i");
     Sleep(100);
     gotoxy(112,19);
     printf("H??ng d?n");
     Sleep(100);
     gotoxy(112,20);
-    printf("Thoát Game");
+    printf("ThoÃ¡t Game");
     gotoxy(90,25);
     set_color(8);
-    printf("(Dùng các nút ?i?u h??ng ?? di chuy?n. B?m Enter ?? ch?n.)");
+    printf("(DÃ¹ng cÃ¡c nÃºt ?i?u h??ng ?? di chuy?n. B?m Enter ?? ch?n.)");
     set_color(7);
 }
 void hienThiTamBiet()
@@ -1684,7 +1684,7 @@ void hienThiTamBiet()
 void ghiChonFile(int x, int y, int mau)
 {
     set_color(mau);
-    if (y==44) printf("Nh?p tên ván ??u: ");
+    if (y==44) printf("Nh?p tÃªn vÃ¡n ??u: ");
     if (y==46)
     {
         if (x==90) printf("V? menu");
@@ -1711,22 +1711,22 @@ int hienThiDanhSachFile()
     gotoxy(105,5);
     printf("    <<  Ch?i ti?p  >>   ");
     gotoxy(100,10);
-    printf("Danh sách các tr?n ??u ?ã l?u: ");
+    printf("Danh sÃ¡ch cÃ¡c tr?n ??u ?Ã£ l?u: ");
     char tmp[30];
     if (first==NULL)
     {
         gotoxy(100,15);
-        printf("Hi?n t?i không có tr?n ??u nào.");
+        printf("Hi?n t?i khÃ´ng cÃ³ tr?n ??u nÃ o.");
         gotoxy(102,17);
         set_color(2);
-        printf("B?m nút b?t k? ?? v? menu");
+        printf("B?m nÃºt b?t k? ?? v? menu");
         set_color(7);
         getch();
         return 0;
     }
     hienThiList();
     gotoxy(100,44);
-    printf("Nh?p tên ván ??u: ");
+    printf("Nh?p tÃªn vÃ¡n ??u: ");
     gotoxy(90,46);
     printf("V? menu");
     gotoxy(130,46);
@@ -1842,7 +1842,7 @@ int hienThiDanhSachFile()
                             if (strlen(tenFileNhap)<=0)
                             {
                                 gotoxy(100,48);
-                                printf("Vui lòng nh?p tên File");
+                                printf("Vui lÃ²ng nh?p tÃªn File");
                                 sleep(2);
                                 gotoxy(100,48);
                                 printf("                           ");
@@ -1852,7 +1852,7 @@ int hienThiDanhSachFile()
                                 if (tonTaiTenFile(tenFileNhap)==0)
                                 {
                                     gotoxy(95,48);
-                                    printf("Vui lòng nh?p ?úng m?t trong nh?ng tên trên danh sách.");
+                                    printf("Vui lÃ²ng nh?p ?Ãºng m?t trong nh?ng tÃªn trÃªn danh sÃ¡ch.");
                                     sleep(2);
                                     gotoxy(100,48);
                                     printf("                                                      ");
@@ -1934,7 +1934,7 @@ void taiDanhSach()
     {
         fprintf(f,"%s ",i->data);
     }
-    close(f);
+    fclose(f);
 }
 void choi()
 {
@@ -1946,7 +1946,7 @@ void choi()
     first=NULL;
     char a[MAX][MAX]={0};
     FILE *f=fopen("listFile.c","a");
-    close(f);
+    fclose(f);
     layDanhSach();
     while (true)
     {
