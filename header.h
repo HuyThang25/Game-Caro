@@ -863,7 +863,6 @@ void diChuyenVaDanh1Nguoi(char a[][MAX])
         }
     }
 }
-
 void hienThiThongTinNguoiChoi(char* hoTen, char player, int step, int win, int x, int y)
 {
     gotoxy(x,y);
